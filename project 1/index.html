@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+    <!-- Link to external css file -->
+    <!-- this linking should be within <head> tags -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- a container to wrap everything so that we ca center it.
+    i have called it login-container (reddish in background)-->
+    <div class="login-container">
+
+        <!-- Header -->
+        <h2>Student Login Form</h2>
+
+        <!-- Form (blue in background)-->
+        <form>
+             <!-- Username field -->
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" class="textbox"/>
+            <br/>
+
+             <!-- Password field -->
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Password" class="textbox"/>
+            <br/>
+          
+             <!-- Login button -->
+            <button type="submit" class="button button-login">Login</button>
+            <br/>
+            <br/>
+
+             <!-- remember me checkbox -->
+            <input type="checkbox"/> Remember me
+
+            <!-- cancel button -->
+            <button class="button">Cancel</button>
+
+             <!-- forgot password -->
+            <p class="forgot-password">Forgot <a href="#">password?</a></p>
+
+        </form>
+        <!-- Form ends here -->
+    </div>
+    <!-- the login-container ends here -->
+    
+
+
+    <!-- Link to external javascript file -->
+    <!-- this linking should be within <body> tags, and as the last item because 
+        javascript should be the last thing to be loaded in html after
+        all other scripts and DOM elements have been loaded successfully
+    -->
+    <link rel="stylesheet" href="javascript/script.js">
+
+</body>
+</html>

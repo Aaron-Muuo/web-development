@@ -1,0 +1,69 @@
+/* Apply style to the html page */
+body{
+    background-color: #dcdcdc;
+    font-family: sans-serif;
+
+    /* flexbox code to center form*/
+    display: flex;
+    justify-content: center;
+
+}
+
+/* for the whole form with header and form fields */
+.login-container{
+    background-color: #ff9681;
+    border: 10px solid #fff;
+    padding: 8px;
+  
+}
+
+/* style the header */
+.login-container h2{
+    color: #7E271E;
+    text-align: center;
+}
+
+/* Style the html form */
+.login-container form{
+    max-width: 100%;
+    background-color: #d2f2ff;
+    border: 3px solid #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Style the labels */
+.login-container form label{
+    display: block;
+}
+
+/* Style the textboxes */
+.login-container form .textbox{
+    display: block;
+    height: 24px;
+    width: 95%;
+    border: 3px solid #40ae73;
+    padding: 8px;
+}
+
+/* Style the buttons */
+.login-container form .button{
+    background-color: #40ae73;
+    color: #fff;
+    border: 0px;
+    height: 40px;
+    padding: 0 12px;
+}
+
+/* Additional style for login button */
+.login-container form .button-login{
+    width: 100%;
+}
+
+/* style for forgot password */
+.forgot-password{
+    display: inline;
+}
+
+/* You can comment/temporarily delete line by line of code to see the
+ effect of each css style */
