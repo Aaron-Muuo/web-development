@@ -1,0 +1,82 @@
+/* Apply style to the html page */
+body{
+    background-color: #dcdcdc;
+    font-family: sans-serif;
+
+    /* flexbox code to center form*/
+    display: flex;
+    justify-content: center;
+
+}
+
+/* for the whole form with header and form fields */
+.login-container{
+    background-color: #ffffff;
+    border: 10px solid #fff;
+    padding: 8px;
+    margin-top: 50px;
+    border-radius: 12px;
+    min-width: 400px;
+  
+}
+
+/* style the header */
+.login-container h2{
+    color: #000;
+    text-align: center;
+}
+
+/* Style the html form */
+.login-container form{
+    max-width: 100%;
+    border: 3px solid #fff;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Style the labels */
+.login-container form label{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* Style the textboxes */
+.login-container form .textbox{
+    display: block;
+    height: 24px;
+    width: 95%;
+    border: 3px solid #40ae73;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+/* Style the buttons */
+.login-container form .button{
+    background-color: #40ae73;
+    color: #fff;
+    border: 0px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 12px;
+}
+
+/* Additional style for login button */
+.login-container form .button-login{
+    width: 100%;
+}
+
+.login-container form .button-login:hover{
+    background-color: #389664;
+    box-shadow: 0 0px 4px 2px #e7e7e7;
+    cursor: pointer;
+}
+
+/* style for forgot password */
+.forgot-password{
+    display: inline;
+}
+
+/* You can comment/temporarily delete line by line of code to see the
+ effect of each css style */

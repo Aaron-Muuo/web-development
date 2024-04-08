@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online store</title>
+    <title>Online Store</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+
+    <!-- a container to wrap everything so that we ca center it.
+    i have called it login-container (reddish in background)-->
+    <div class="login-container">
+
+        <!-- Header -->
+        <h2>Login</h2>
+
+        <!-- Form (blue in background)-->
+        <form action="#" id="login-form">
+             <!-- Email field -->
+            <label>Email Address</label>
+            <input type="text" placeholder="email@domain.com" class="textbox" id="input-email" required/>
+            <br/>
+
+             <!-- Password field -->
+            <label>Password</label>
+            <input type="password" placeholder="*******" class="textbox" id="input-password" required/>
+            <br/>
+          
+             <!-- Login button -->
+            <button class="button button-login" id="login-button">Login</button>
+        
+
+        </form>
+        <!-- Form ends here -->
+    </div>
+    <!-- the login-container ends here -->
     
 
 
+    <!-- Link to external javascript file -->
+    <!-- this linking should be within <body> tags, and as the last item because 
+        javascript should be the last thing to be loaded in html after
+        all other scripts and DOM elements have been loaded successfully
+    -->
+    <script src="javascript/script.js"></script>
 
 </body>
 </html>
