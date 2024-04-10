@@ -7,6 +7,16 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script>
+        // JavaScript code to execute immediately
+        let userProfile = localStorage.getItem('userProfile');
+
+        // Check if userProfile exists in localStorage
+        if (userProfile) {
+            document.location.href='dashboard.html';
+        }
+    </script>
+
 </head>
 <body>
 

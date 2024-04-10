@@ -26,6 +26,7 @@ header {
 .header-content h1 {
     margin: 0;
     flex-grow: 1; /* Ensures the title takes the available space */
+    color:#62dcb6;
 }
 
 nav ul {
@@ -42,8 +43,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     transition: color 0.3s ease;
+    border-radius: 3px;
+}
+
+nav ul li a.active {
+    background: #059669;
 }
 
 nav ul li a:hover {
@@ -65,7 +71,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 16px 16px 80px 16px;
 }
 
 .product {
@@ -119,6 +125,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,3 +142,10 @@ footer {
     }
 }
 
+.loading-section{
+    background-color: #007bff;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    border-radius: 8px;
+}

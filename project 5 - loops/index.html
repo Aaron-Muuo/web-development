@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+
+<button onclick="loopFunction1()">For loop</button>
+<button onclick="loopFunction2()">While loop</button>
+<button onclick="loopFunction3()">For Each loop</button>
+
+<button onclick="logMovies()">Log movies</button>
+
+<script>
+
+    function loopFunction1(){
+        let students = ["aaron", "Spence", "faith", "manu"];
+
+        for(let index=0;index<students.length;index++){
+            console.log(students[index]);
+        }
+
+    
+     
+    }
+
+    function loopFunction2(){
+        let students = ["aaron", "Spence", "faith", "manu"];
+
+        let index=0;
+
+        while(index < students.length){
+
+            console.log(students[index]);
+
+            index++;
+        }
+
+    
+     
+    }
+
+    function loopFunction3(){
+        let students = ["aaron", "Spence", "faith", "manu"];
+
+        students.forEach((student)=>{
+
+            console.log(student);
+            
+        });
+
+
+     
+    }
+
+    async function logMovies() {
+     
+        fetch('https://fakestoreapi.com/products')
+        .then(response => response.json())
+        .then(data => {
+            // Process the retrieved data
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+      }
+</script>
+    
+</body>
+</html>
