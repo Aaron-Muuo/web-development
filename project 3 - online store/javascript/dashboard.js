@@ -72,14 +72,37 @@ document.addEventListener('DOMContentLoaded', function() {
             const section = document.createElement('section');
             section.classList.add('product');
             section.innerHTML = `
-                <img src="${product.image}" width="100%" alt="${product.title}">
-                <h2>${product.title}</h2>
-                <p class="price">Kes ${product.price}</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <center>
+                    <img src="${product.image}" width="150" heigh="150" alt="${product.title}">
+                </center>
+                <h4>${product.title}</h4>
+                <p class="price">Kes. ${product.price} /-</p>
+                <small class="category">Category: ${product.category}</small> <br>
+                <small class="rating">Rating: ${product.rating.rate}</small> <br><br>
+                <button class="add-to-cart" onclick="addToCart('${product.id}')" id="cart-${product.id}">Add to Cart</button>
             `;
             productContainer.appendChild(section);
         });
-    }
-    
 
+    }
+
+    
 });
+
+function addToCart(productID) {
+
+    //console.log(productID);
+
+    // Retrieve cart items from localStorage or initialize as empty array
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    // Add item to cart
+    cart.push(productID);
+
+    // Save updated cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    document.getElementById('cart-'+productID).classList.add("added");
+    alert("You have added an item to cart.");
+   
+}

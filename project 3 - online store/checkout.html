@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Store | Cart</title>
+    <title>Online Store | Checkout</title>
     <link rel="shortcut icon" href="images/online-store.png" type="image/x-icon">
     <link rel="stylesheet" href="css/dashboard.css">
 
@@ -34,15 +34,37 @@
             </nav>
         </div>
     </header>
-    <h1>My cart</h1>
-    <p id="txt-price"></p>
-    <main class="product-container" >
+    <h1>Checkout</h1>
+  
+    <main class="checkout-container">
 
-        <div id="cart">
+        <center>
+            <img src="images/saf.png" width="300"/>
+        </center>
 
-        </div>
+            <div>
+                <ul>
+                    <li>Go to Mpesa</li>
+                    <li>Go to Buy goods</li>
+                    <li>Enter till number</li>
+                    <li>Enter amount</li>
+                    <li>Enter pin</li>
+                    <li>Complete transaction</li>
+                    <li>Upload your transaction receipt/code below</li>
+                </ul>
+            </div>
 
-        <!-- <button class="button" id="btn-checkout">Proceed to checkout</button> -->
+            <form class="checkout-form" action="dashboard.html">
+                <label for="">Code</label>
+                <input type="text" placeholder="transaction code" required/>
+
+                <label for="">Upload Receipt</label>
+                <input type="file" required/>
+
+                <button type="submit">Submit</button>
+
+            </form>
+     
        
     </main>
 
@@ -50,6 +72,6 @@
         <p>&copy; 2024 Online Store. Designed by Faith &#9829;</p>
     </footer>
 
-    <script src="javascript/cart.js"></script>
+    <script src="javascript/checkout.js"></script>
 </body>
 </html>
