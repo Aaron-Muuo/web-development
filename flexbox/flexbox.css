@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: gray;
+    height: 200px;
+}
+.flex-item {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    height: 75px;
+    font-size: 20px;
+}
